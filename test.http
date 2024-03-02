@@ -1,0 +1,18 @@
+
+#GET http://localhost:4004/odata/v4/productshop/addNumberFunction(a=4,b=8)
+
+#PUT http://localhost:4004/odata/v4/productshop/product('1')
+
+
+
+POST http://localhost:4004/odata/v4/productshop/addNumberAction
+Content-Type: application/json
+
+{
+  "a": 10,
+  "b": 20
+}
+
+
+
+
