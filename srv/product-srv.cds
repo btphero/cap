@@ -2,7 +2,14 @@
 using { sap.cap.ordershop as my } from '../db/schema';
 service productshop {
    @odata.draft.enabled
-   entity product as projection on my.Product
+   //bound actions --> Actions are now bound with your entity
+
+   entity product as projection on my.Product actions {
+   action orderProduct(name: String @title: 'Product Name', stock: Integer @title: 'Order Quantity');
+    action updateProduct(name: String @title: 'Product Name', stock: Integer @title: 'Order Quantity')
+   }
+
+   @readonly
    entity supplier as projection on my.Supplier
    entity orders as projection on my.Orders
    
@@ -12,12 +19,11 @@ service productshop {
    }
 
 function addNumberFunction(a: Integer, b:Integer) returns Integer;
-
+//unbound
 action addNumberAction(a:Integer, b:Integer) returns Integer;
 
-action orderProduct(name: String @title: 'Product Name', stock: Integer @title: 'Order Quantity');
+//unbound
 
-action updateProduct(name: String @title: 'Product Name', stock: Integer @title: 'Order Quantity')
 
 
 

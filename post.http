@@ -1,0 +1,10 @@
+GET http://localhost:4004/odata/v4/productshop/supplier
+
+
+POST http://localhost:4004/odata/v4/productshop/supplier
+Content-Type: application/json
+
+{ 
+    "ID": "6",
+    "name" : "John Electrcials"
+}
