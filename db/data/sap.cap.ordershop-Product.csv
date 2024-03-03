@@ -1,3 +1,4 @@
-ID,name,stock,cost_price,cost_quantity,mfgDate,expDate,color
-1,Bike,24,30993,23,20230193,20230482,Red
-2,Car,45,83687,54,20210492,20239402,Blue
+ID,name,stock,cost_price,cost_quantity,mfgDate,expDate,color,supplier_ID,emission,criticality
+92bf9fe7-0c37-4a93-a460-bb469466cf8f,Maggi Spicy,24,30993,23,20230193,20230482,Red,1,273,3
+92bf9fe7-0c37-4a93-a460-bb469466cf84,Maggi Simple,24,30993,23,20230193,20230482,Red,2,3421,2
+64bf7e61-dde3-48be-bcfe-1cd0948b7e32,Maggi sugar,45,83687,54,20210492,20239402,Blue,1,3782,1
