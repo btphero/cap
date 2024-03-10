@@ -1,0 +1,7 @@
+PATCH http://localhost:4004/odata/v4/productshop/product(64bf7e61-dde3-48be-bcfe-1cd0948b7e32)
+Content-Type: application/json
+
+{ 
+   "ID": "64bf7e61-dde3-48be-bcfe-1cd0948b7e59", 
+   "name": "Maggi Salt" 
+}

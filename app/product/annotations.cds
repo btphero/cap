@@ -24,6 +24,11 @@ UI.LineItem: [
         Value: supplier_ID,
     },
     {
+        $Type: 'UI.DataField',
+        Label: 'Color',
+        Value: color,
+    },
+    {
         $Type      : 'UI.DataField',
         Label      : 'Emission',
         Value      : emission,
@@ -31,7 +36,7 @@ UI.LineItem: [
     },
     {
         $Type      : 'UI.DataFieldForAction',
-        Action: 'service.orderProduct',
+        Action: 'productshop.orderProduct',
         Label      : 'Place Order'
     },
 
@@ -76,8 +81,8 @@ annotate service.product with @(
     UI.Identification: [
     {
         $Type      : 'UI.DataFieldForAction',
-        Action: 'service.updateProduct',
-        Label      : 'Update Stock'
+        Action: 'service.updateColor',
+        Label      : 'Update Color'
     },
     ],
     UI.FieldGroup #GeneratedGroup1: {

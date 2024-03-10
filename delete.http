@@ -1,0 +1,1 @@
+DELETE http://localhost:4004/odata/v4/productshop/product(74dcb3bc-e0fd-467e-9afb-2a61546d0177)

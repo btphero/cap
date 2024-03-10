@@ -16,8 +16,8 @@ type PriceDetails {
 
 entity Product : additionInfo, managed, cuid
 {
-    name : String;
-    stock : String;
+    name : String @mandatory;
+    stock : Integer;
     cost: PriceDetails; //to access the price and quntity --> cost_price , cost_quantity,
     supplier: Association to Supplier;
     emission: Integer;
